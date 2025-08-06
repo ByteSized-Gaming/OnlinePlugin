@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    <init>
+        <log text="EOSSDK LibAndroid_UPL loaded"/>
+    </init>
+
+    <androidManifestUpdates>
+        <manifestAdditions>
+            <![CDATA[
+                <uses-permission android:name="android.permission.INTERNET"/>
+                <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+                <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+                <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+            ]]>
+        </manifestAdditions>
+        <applicationElement>
+            <addAttribute name="android:usesCleartextTraffic" value="true"/>
+        </applicationElement>
+    </androidManifestUpdates>
+
+    <soLibraries>
+        <soLibrary arch="arm64-v8a">libEOSSDK.so</soLibrary>
+        <soLibrary arch="armeabi-v7a">libEOSSDK.so</soLibrary>
+        <soLibrary arch="x86_64">libEOSSDK.so</soLibrary>
+    </soLibraries>
+
+</root>

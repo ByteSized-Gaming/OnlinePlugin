@@ -1,0 +1,41 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "MyOnlinePlugin",
+	"Description": "",
+	"Category": "Other",
+	"CreatedBy": "ByteSized",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"EnabledByDefault": true,
+	"CanContainContent": false,
+	"Installed": false,
+	"BuiltInInitialFeatureState": "Registered",
+	"Modules": [
+		{
+			"Name": "MyOnlinePlugin",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault"
+		}
+	],
+	"Plugins": [
+		{
+        "Name": "OnlineSubsystem",
+        "Enabled": true
+    	},
+		{
+        "Name": "OnlineSubsystemEOS",
+        "Enabled": true
+    	},
+		{
+        "Name": "OnlineSubsystemUtils",
+        "Enabled": true
+    	}
+	]
+	
+}
